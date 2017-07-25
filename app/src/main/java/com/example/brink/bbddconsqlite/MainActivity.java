@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         apellidos = (EditText) findViewById(R.id.e2);
         telefono = (EditText) findViewById(R.id.e3);
 
+        lista = (ListView) findViewById(R.id.list1);
+
         bd = new BaseDatos(this,"usuarios",null,2);
 
         consultaCursor.setOnClickListener(new View.OnClickListener() {
